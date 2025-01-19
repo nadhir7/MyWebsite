@@ -259,6 +259,15 @@ h1{
     }
        
 } 
+@media (max-width:870px) {
+    .desription{
+      
+        font-size: 17px;
+        margin:0;
+        padding:10px;
+        background-color: #a59cd1;
+    }
+}    
 @media (max-width:685px){
     #hi{
         grid-column-start: 1;
@@ -267,6 +276,9 @@ h1{
       .desription{
       
         font-size: 15px;
+    }
+     #codeimg{
+        width:100px
     }
 } 
 .text{
