@@ -262,7 +262,7 @@ h1{
 @media (max-width:870px) {
     .desription{
       
-        font-size: 17px;
+        font-size: 16px;
         margin:0;
         padding:10px;
      
@@ -275,7 +275,7 @@ h1{
     }      
       .desription{
       
-        font-size: 15px;
+        font-size: 14px;
     }
      #codeimg{
         width:100px
