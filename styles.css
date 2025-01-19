@@ -262,7 +262,7 @@ h1{
 @media (max-width:870px) {
     .desription{
       
-        font-size: 16px;
+        font-size: 17px;
         margin:0;
         padding:8px;
      
@@ -275,16 +275,10 @@ h1{
     }      
       .desription{
       
-        font-size: 17px;
+        font-size: 15px;
     }
      #codeimg{
         width:100px
-    }
-    .text h2{
-        text-align: center;
-        margin-top: 12px;
-        font-size: 170%;
-        
     }
 } 
 .text{
