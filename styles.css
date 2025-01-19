@@ -264,6 +264,10 @@ h1{
         grid-column-start: 1;
         grid-column-end: 2;
     }      
+      .desription{
+      
+        font-size: 15px;
+    }
 } 
 .text{
     height: 95%;
