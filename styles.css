@@ -1,0 +1,273 @@
+body{ 
+    background-color: #eeeeee;
+    margin-left:10%;
+    margin-right:10%;
+    
+}
+#navbar{
+    display: flex;
+    gap:5%;
+    
+}
+#span1{
+    position:relative
+
+}
+#span1::before {
+    content:"web developper";
+    animation: changingwords 16s 2s infinite;
+    
+
+}
+@keyframes changingwords {
+    0%,25%{
+        content: "web developper";
+
+    }
+    26%,50%{
+        content: "programmer";
+
+    }
+    51%,75%{
+        content:"graphic designer"
+
+
+    }
+    76%,100%{
+        content:"CS student"
+
+    }
+}
+#span1::after {
+    content:"";
+    width:calc(100% + 8px);
+    height: 100%;
+    background-color: #eeeeee;
+    position: absolute;
+    right: -4%;
+    border-left: 3px solid #7760e9;
+    animation: tapping 0.8s ,typing 4s ease-in-out 2s infinite forwards;
+}
+@keyframes tapping {
+    to {
+        border-left:3px solid #eeeeee;
+    }
+} 
+@keyframes typing {
+    0%{
+        
+        width: calc(100% + 8px)
+    }
+    50%{
+        width:0
+    }
+}
+a{text-decoration:none;
+    color:#01010175;
+    font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+span{
+    color:#7760e9
+}
+#section1{
+    display: flex;
+    flex-direction: row;
+}
+#firsthalf{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+}
+#secondhalf{
+    width: 50%;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+
+h1{
+    font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 720%;
+  margin:0;
+  margin-top:170px;
+
+}
+#firsthalf >h2{
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 270%;
+    margin: 0
+}
+.text h2{
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 270%;
+    margin: 0;;
+}
+@media (max-width:1000px) {
+    body{
+        margin-left:5% ;
+        margin-right:5% ;
+    }
+    
+    #section1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #firsthalf{
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        
+        
+    
+    }
+    #firsthalf h1{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 500%;
+        
+    }
+    #firsthalf h2 ,.text h2{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 200%;
+        
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+    }
+    #secondhalf {
+        margin:0px;
+        padding: 0;   
+        margin-bottom: 200px;
+    }
+
+}
+@media (max-height:700px) {
+   h1{
+    margin-top: 60px;
+   }
+    
+}
+@media (max-width:1470px) {
+    #firsthalf h1{
+        margin-top: 70px;
+
+        
+}   
+#secondhalf img{
+    margin:0px;
+    padding: 0;
+    width: 95%;
+
+}
+#secondhalf{
+    margin-top: 30px;
+}
+}
+@media (min-width:705px) and (max-width:1150px) {
+    #secondhalf{
+        margin-top:60px
+    }
+}
+@media (max-width:300px) {
+    h1{
+        margin-top:0px;
+    }
+    #firsthalf{
+        margin-top:0px;
+    }
+    #secondhalf{
+        width: 250px;
+        align-self: center;
+    }
+    #secondhalf img{
+        width: 100%;
+    }
+}
+#section2{
+    height: 100vh;
+    gap:10px;
+
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(100px,1fr));
+    justify-content: center;
+   
+
+}
+.text{
+    height: auto;
+    background-color: #7760e9;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 5px;
+
+}
+
+.c{
+   
+    background-color: #eeeeee;
+}
+.desription{
+    margin: 20px;
+
+    text-align: center;
+    color:#010101;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+#codeimg{
+    width:100%;
+    justify-self: center;
+    align-self: center;
+}
+@media (max-width:1150px) {
+    #codeimg{
+        height: 100%;
+        width:250px ;
+    }
+    #hi{
+        grid-column: span 2;
+        height: fit-content;
+    }
+       
+} 
+@media (max-width:685px){
+    #hi{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }      
+} 
+.text{
+    height: 95%;
+}
+#hi{
+    background-color: #7660e9;
+}
