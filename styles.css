@@ -267,6 +267,13 @@ h1{
         padding:8px;
      
     }
+    .a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .ho{
+        margin-top:0px
 }    
 @media (max-width:685px){
     #hi{
